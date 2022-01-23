@@ -7,8 +7,10 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-$username = $_POST["username"];
-$password = $_POST["password"];
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+
 
 //username ase naki check korar jonno
 $unamecheckquery = "SELECT username, password FROM user WHERE username = '" . $username . "'";
